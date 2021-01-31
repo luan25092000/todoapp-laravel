@@ -14,7 +14,7 @@
         <div class="card">
             <div class="card-header">Create new todo</div>
             <div class="card-body">
-                <form action="store-todos"method="POST">
+                <form action="{{ route('todos.store') }}"method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <input type="text"class="form-control"name="name"placeholder="Name">

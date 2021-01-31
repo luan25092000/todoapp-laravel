@@ -13,7 +13,7 @@
         <div class="card">
             <div class="card-header">Edit todo</div>
             <div class="card-body">
-            <form action="/ToDoApp/public/todos/{{$todo->id}}/update-todos"method="POST">
+            <form action="{{ route('todos.edit',['todo'=>$todo->id]) }}"method="POST">
                     @csrf
                     <div class="form-group">
                         <input type="text"placeholder="Name"name="name"value="{{$todo->name}}"class="form-control">

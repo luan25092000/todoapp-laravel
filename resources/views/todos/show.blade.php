@@ -15,9 +15,9 @@
             <div class="card-header">Details</div>
             <div class="card-body">
                 {{$todo->description}}
-                <a href="../todos" class="btn btn-danger">Exit</a>
-                <a href="../todos/{{$todo->id}}/edit"class="btn btn-info">Edit</a>
-                <a href="../todos/{{$todo->id}}/delete"class="btn btn-warning">Delete</a>
+                <a href="{{ route('todos.view') }}" class="btn btn-danger">Exit</a>
+                <a href="{{ route('todos.edit',['todo'=>$todo->id]) }}"class="btn btn-info">Edit</a>
+                <a href="{{ route('todos.delete',['todo'=>$todo->id]) }}"class="btn btn-warning">Delete</a>
             </div>
             <div class="card-footer"></div>
         </div>

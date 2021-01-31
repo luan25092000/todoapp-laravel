@@ -50,7 +50,7 @@
     <body>
             <div class="content">
                 <div class="title m-b-md">
-                    <a href="todos"data-toggle="tooltip"title="Nhấp vào đây"data-placement="right">Todos</a>
+                    <a href="{{ route('todos.view') }}"data-toggle="tooltip"title="Nhấp vào đây"data-placement="right">Todos</a>
                 </div>
             </div>
             <!--script-->
